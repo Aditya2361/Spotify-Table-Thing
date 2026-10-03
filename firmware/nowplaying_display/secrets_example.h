@@ -3,5 +3,5 @@
 
 #define WIFI_SSID  "your-wifi-name"        // must be a 2.4 GHz network
 #define WIFI_PASS  "your-wifi-password"
-#define MAC_IP     "192.168.1.50"          // your Mac's IP: ipconfig getifaddr en0
+#define MAC_IP     "your-mac-ip"          // your Mac's IP: ipconfig getifaddr en0
 #define ACCESS_KEY "same-key-as-config.py"
