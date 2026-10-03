@@ -1,0 +1,7 @@
+config.py
+.venv/
+__pycache__/
+live_preview*.png
+cover_test*.png
+.DS_Store
+.wakatime-project
