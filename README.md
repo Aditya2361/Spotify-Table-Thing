@@ -19,18 +19,6 @@ reads "Now Playing"  --> web server <-- asks for song info about once a second
 
 The Mac does the heavy work (reading the song, shrinking the cover to 80x80). The board only has to draw. The server only answers requests that include a secret access key.
 
-## Status
-
-| Part | Status |
-|---|---|
-| Mac script: song info, cover, progress | Done and tested |
-| Local web server and access key | Done and tested (browser, phone, curl) |
-| Playback commands (play/pause, next, back) | Done and tested with curl |
-| Screen layout preview (320x240) | Done |
-| ESP32 firmware (WiFi, drawing) | Drafted, **not tested** (board not here yet) |
-| Touch buttons on the ESP32 | Not implemented (touch pins not confirmed) |
-| Cardboard case | In design |
-
 ## Hardware
 
 - Freenove ESP32 Display 2.8" (FNK0114F): ESP32 with a built-in 240x320 ILI9341 touch screen
@@ -58,7 +46,7 @@ The Mac does the heavy work (reading the song, shrinking the cover to 80x80). Th
    ```
 2. Get the code and install the library:
    ```
-   git clone https://github.com/YOUR-USERNAME/nowplaying-desk.git
+   git clone https://github.com/Aditya2361/Spotify-Table-Thing.git
    cd nowplaying-desk
    python3 -m venv .venv
    source .venv/bin/activate
