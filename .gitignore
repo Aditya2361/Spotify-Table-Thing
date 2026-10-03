@@ -1,4 +1,5 @@
 config.py
+secrets.h
 .venv/
 __pycache__/
 live_preview*.png
