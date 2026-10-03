@@ -1,4 +1,4 @@
-# NowPlaying Desk
+# Spotify Table Thing
 
 A small desk display that shows what is playing on my Mac: album cover, song title, artist, a live progress bar, and play/pause, back and next buttons on a 2.8" colour touch screen.
 
@@ -95,21 +95,9 @@ Example: `curl -X POST "http://localhost:8000/cmd/toggle?key=YOUR-KEY"`
 
 To reach it from another device, use your Mac's IP address (find it with `ipconfig getifaddr en0`) on the same WiFi.
 
-## Problems I ran into
-
-- **Blurry covers:** macOS only provides a 150x150 cover. I tried searching iTunes and Deezer for bigger ones, but at the final 80x80 size I couldn't see a difference, so I removed that code.
-- **Wrong progress time:** the player only reports the time when something happens (pause, play, skip), so the time showed 0 mid-song. My first fix also counted paused time as playing time. Switching to `media-control`, which includes a timestamp, solved it.
-
-## Limitations
-
-- It uses a private Apple interface through `media-control`, so a macOS update could break it.
-- The Mac must be on and on the same WiFi as the board.
-- The server uses plain HTTP, so the key is not encrypted. Use it on a home network only. Don't use it on public WiFi, and don't forward the port on your router.
-- Tested on my MacBook with Brave.
-- The ESP32 side has not been tested yet.
 
 ## Credits
 
 - [mediaremote-adapter](https://github.com/ungive/mediaremote-adapter) and `media-control` by ungive, for reading Now Playing on recent macOS
 - [Pillow](https://python-pillow.org) for image handling
-- I used Claude (AI) to help me understand and debug parts of this project.
+- Claude (AI) debug parts of this project
