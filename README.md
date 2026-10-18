@@ -1,6 +1,9 @@
 # Spotify Table Thing
 
 A small desk display that shows what is playing on my Mac: album cover, song title, artist, a live progress bar, and play/pause, back and next buttons on a 2.8" colour touch screen.
+<img width="1312" height="1199" alt="Image1" src="https://github.com/user-attachments/assets/c7484c97-ca81-4d05-9fc6-806ff85671ef" />
+<img width="1536" height="1024" alt="WiringDiagram" src="https://github.com/user-attachments/assets/e0b56d4e-fac5-48b5-8df1-2dd4e76a2851" />
+
 
 ## Why this design
 
